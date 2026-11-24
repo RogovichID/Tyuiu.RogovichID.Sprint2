@@ -1,7 +1,7 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint2;
 namespace Tyuiu.RogovichID.Sprint2.Task6.V1.Lib
 {
-    public class DataService
+    public class DataService : ISprint2Task6V1
     {
         public int FindMonthDaysCount(int value)
         {
