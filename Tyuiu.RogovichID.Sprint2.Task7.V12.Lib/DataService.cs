@@ -5,9 +5,9 @@ namespace Tyuiu.RogovichID.Sprint2.Task7.V12.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            bool rightArea = (x >= 0) && (y >= x * x) && (y <= 2 - x);
+            bool rightArea = (x > 0) && (y > x * x) && (y < 2 - x);
 
-            bool leftArea = (x < 0) && (y >= 2 - x);
+            bool leftArea = (x < 0) && (y > 2 - x);
 
             return rightArea || leftArea;
         }
